@@ -73,6 +73,7 @@ extern crate alloc;
 /// assert_eq!(ALLOC_COUNT.load(Ordering::SeqCst), 1);
 /// assert_eq!(DEALLOC_COUNT.load(Ordering::SeqCst), 1);
 /// ```
+#[derive(Clone)]
 pub struct ConstAlloc<A>(A);
 
 use alloc::alloc::{AllocError, Allocator, Layout};
