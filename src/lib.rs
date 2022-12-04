@@ -74,7 +74,7 @@ extern crate alloc;
 /// assert_eq!(DEALLOC_COUNT.load(Ordering::SeqCst), 1);
 /// ```
 #[derive(Clone)]
-pub struct ConstAlloc<A>(A);
+pub struct ConstAlloc<A>(pub A);
 
 use alloc::alloc::{AllocError, Allocator, Layout};
 use core::intrinsics::{const_allocate, const_deallocate, const_eval_select};
