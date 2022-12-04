@@ -16,15 +16,12 @@
 #![feature(
     allocator_api,
     const_eval_select,
-    const_fn_trait_bound,
     const_heap,
-    const_intrinsic_copy,
     const_nonnull_new,
     const_option_ext,
     const_ptr_is_null,
-    const_ptr_offset,
     const_ptr_write,
-    const_slice_from_raw_parts,
+    const_slice_from_raw_parts_mut,
     const_trait_impl,
     core_intrinsics
 )]
